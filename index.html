@@ -28,19 +28,27 @@
 
   <main id="conteudo">
     <section class="hero" id="topo">
-      <div>
+      <div class="hero-text">
         <h1>Cabelo bem cuidado, agenda sem desencontro.</h1>
         <p>Corte, escova, hidratação e coloração com horários que respeitam o tempo real de cada serviço.</p>
         <div class="actions">
           <a class="btn" href="#agendamento">Agendar horário</a>
           <a class="btn ghost" href="#servicos">Conhecer os serviços</a>
         </div>
+        <aside class="hero-panel" aria-labelledby="hero-slots-title">
+          <h2 id="hero-slots-title">Próximos horários livres</h2>
+          <p>Corte feminino, consultado agora na agenda demonstrativa.</p>
+          <ul id="hero-slots"></ul>
+        </aside>
       </div>
-      <aside class="hero-panel" aria-labelledby="hero-slots-title">
-        <h2 id="hero-slots-title">Próximos horários livres</h2>
-        <p>Corte feminino, consultado agora na agenda demonstrativa.</p>
-        <ul id="hero-slots"></ul>
-      </aside>
+      <div class="hero-photos">
+        <figure>
+          <img src="assets/images/mulher.webp" width="764" height="955" fetchpriority="high" alt="Profissional cortando com tesoura mechas de cabelo escuro e úmido">
+        </figure>
+        <figure>
+          <img src="assets/images/homem.webp" width="687" height="1031" alt="Profissional finalizando o corte masculino com pente e tesoura de desbaste">
+        </figure>
+      </div>
     </section>
 
     <section id="servicos">
