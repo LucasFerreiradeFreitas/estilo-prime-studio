@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estilo Prime Studio | Demonstração de portfólio</title>
+  <meta name="description" content="Projeto fictício de portfólio: landing page e agendamento demonstrativo para um salão de beleza.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <div class="demo-bar">Projeto fictício de portfólio. Todos os dados desta página são demonstrativos.</div>
+  <header class="site-header">
+    <a class="logo" href="#topo">Estilo Prime Studio</a>
+    <nav aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+    <a class="btn" href="#agendamento">Agendar horário</a>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo">
+      <div>
+        <h1>Cabelo bem cuidado, agenda sem desencontro.</h1>
+        <p>Corte, escova, hidratação e coloração com horários que respeitam o tempo real de cada serviço.</p>
+        <div class="actions">
+          <a class="btn" href="#agendamento">Agendar horário</a>
+          <a class="btn ghost" href="#servicos">Conhecer os serviços</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-labelledby="hero-slots-title">
+        <h2 id="hero-slots-title">Próximos horários livres</h2>
+        <p>Corte feminino, consultado agora na agenda demonstrativa.</p>
+        <ul id="hero-slots"></ul>
+      </aside>
+    </section>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <ul class="service-list" id="service-list"></ul>
+    </section>
+
+    <section id="sobre" class="about">
+      <h2>Sobre o estúdio</h2>
+      <p>O Estilo Prime Studio é um salão fictício criado para demonstrar uma landing page com agendamento online.</p>
+      <dl>
+        <dt>Preço e duração claros</dt>
+        <dd>Cada serviço mostra quanto custa e quanto tempo leva antes da reserva.</dd>
+        <dt>Agenda sem sobreposição</dt>
+        <dd>O sistema só oferece horários que cabem na duração do serviço escolhido.</dd>
+        <dt>Remarcação simples</dt>
+        <dd>Cancelar ou mudar o horário leva poucos cliques.</dd>
+      </dl>
+    </section>
+
+    <section id="agendamento">
+      <h2>Agendamento</h2>
+      <p class="notice">Modo demonstrativo: as reservas ficam apenas neste navegador e não são enviadas a ninguém. Use nomes fictícios.</p>
+      <div class="booking">
+        <form id="booking-form" novalidate>
+          <label>Serviço <select id="service"></select></label>
+          <label>Data <input type="date" id="date" required></label>
+          <fieldset>
+            <legend>Horários disponíveis</legend>
+            <div id="slots" class="slots"></div>
+          </fieldset>
+          <label>Nome fictício <input id="name" maxlength="60" autocomplete="off" required></label>
+          <button class="btn" type="submit" id="confirm">Confirmar reserva</button>
+          <p id="form-message" role="status"></p>
+        </form>
+        <div>
+          <h3>Agenda demonstrativa</h3>
+          <ul id="agenda" class="agenda"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="chat" aria-labelledby="chat-title">
+      <h2 id="chat-title">Conversa demonstrativa</h2>
+      <p class="notice">Respostas pré-programadas. Esta versão não tem inteligência artificial real nem integração com o WhatsApp.</p>
+      <div class="chat-box">
+        <div class="chat-log" role="log" aria-live="polite"></div>
+        <div class="chat-options"></div>
+        <form class="chat-form" hidden>
+          <label class="sr" for="chat-input">Mensagem</label>
+          <input id="chat-input" autocomplete="off">
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="localizacao" class="about">
+      <h2>Localização e contato</h2>
+      <p>Endereço demonstrativo: Rua Exemplo, 123, Cidade Fictícia.</p>
+      <p>Horário fictício: segunda a sábado, das 9h às 19h. Domingo fechado.</p>
+      <p><a href="mailto:contato@example.com">contato@example.com</a> (endereço de exemplo)</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Estilo Prime Studio é um projeto de portfólio fictício, sem clientes reais.</p>
+    <nav aria-label="Rodapé"><a href="#servicos">Serviços</a><a href="#agendamento">Agendamento</a><a href="#localizacao">Contato</a></nav>
+  </footer>
+</body>
+
+</html>
