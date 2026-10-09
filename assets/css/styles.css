@@ -375,3 +375,26 @@ footer p {
 .hero-photos figure:nth-child(2) {
   margin-top: 3rem;
 }
+
+.site-header {
+  background: #fff;
+}
+@media (max-width: 40rem) {
+  .site-header {
+    position: static;
+    padding: 0.75rem 1rem;
+  }
+  .logo {
+    font-size: 1.4rem;
+  }
+  .site-header .btn {
+    padding: 0.55rem 1rem;
+  }
+  .site-header nav {
+    order: 3;
+    flex: 1 1 100%;
+  }
+  .hero {
+    padding-top: 2rem;
+  }
+}
